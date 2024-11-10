@@ -1,0 +1,17 @@
+.main-slideshow {
+    .slideshow {
+        height: 69vh;
+        width: 100%;
+        background: var(--cl-dark-2);
+        .img {
+            background: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0) 90%,
+                    rgba(255, 255, 255, 1) 100%
+                ),
+                url('/src/images/sale.png') center no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+    }
+}
