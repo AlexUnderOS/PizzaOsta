@@ -36,3 +36,19 @@ a {
 li {
     list-style: none;
 }
+
+.linear-gradient-rl {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.15) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.linear-gradient-lr {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.15) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}

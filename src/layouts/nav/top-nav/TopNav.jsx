@@ -1,6 +1,7 @@
 import './TopNav.scss'
 import useParallax from '../../../hooks/useParalax'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function TopNav() {
     const [isSticky, setIsSticky] = useState(false)
@@ -31,15 +32,15 @@ function TopNav() {
                         alt="pizza osta"
                     />
                     <h1>Pizza Osta</h1>
-                    <p>+371 999 999 99</p>
+                    <p className='linear-gradient-rl'>+371 999 999 99</p>
                 </div>
                 <div className="r-side">
                     <div className="pizza-constructor">
                         <a href="/pizza-constructor">Constructor</a>
                     </div>
-                    <a href="" className="login">
+                    <Link to={'/login'} className="login">
                         Log In / Sign Up
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className={`content-2 ${isSticky ? 'sticky' : ''}`}>

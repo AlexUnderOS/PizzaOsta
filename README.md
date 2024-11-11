@@ -13,3 +13,10 @@ __vite.config.js__
     }
   }
 __________________
+
+[FONT AWESOME]
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/react-fontawesome@latest
+npm install @fortawesome/free-regular-svg-icons
+
+__________________
