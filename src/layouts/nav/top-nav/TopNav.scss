@@ -71,10 +71,16 @@
             li {
                 padding: 20px;
                 transition: all 0.2s ease-in-out;
+                a {
+                    color: var(--cl-light-1);
+                    transition: color 0.2s ease-in-out;
+                }
             }
             li:hover {
                 background: var(--cl-light-1);
-                color: var(--cl-dark-3);
+                a {
+                    color: var(--cl-dark-3);
+                }
             }
         }
     }

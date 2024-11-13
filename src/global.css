@@ -22,8 +22,7 @@ body {
     right: 0;
     bottom: 0;
     top: 0;
-    background-image: url(images/bg-1.png);
-    background-position: center;
+    background: url(images/bg-1.png) center;
     background-size: 50%;
     opacity: 10%;
     z-index: -1;
@@ -51,4 +50,15 @@ li {
         rgba(0, 0, 0, 0.15) 50%,
         rgba(0, 0, 0, 0) 100%
     );
+}
+
+
+.box-shadow-1 {
+    box-shadow: 0 10px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.h2-1 {
+    font-weight: 800;
+    font-size: 25pt;
+    color: var(--cl-dark-2);
 }

@@ -13,44 +13,52 @@ function TopNav() {
                 setIsSticky(false)
             }
         }
-        
+
         window.addEventListener('scroll', handleScroll)
-        
+
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
-    
+
     useParallax('.pizza-constructor')
 
     return (
-        <nav className="top-nav">
-            <div className="content-1">
-                <div className="l-side">
-                    <img
-                        draggable="false"
-                        className="logo"
-                        src="/src/images/pizzalogo.png"
-                        alt="pizza osta"
-                    />
-                    <h1>Pizza Osta</h1>
-                    <p className='linear-gradient-rl'>+371 999 999 99</p>
-                </div>
-                <div className="r-side">
-                    <div className="pizza-constructor">
-                        <a href="/pizza-constructor">Constructor</a>
+        <header>
+            <nav className="top-nav">
+                <div className="content-1">
+                    <div className="l-side">
+                        <img
+                            draggable="false"
+                            className="logo"
+                            src="/src/images/pizzalogo.png"
+                            alt="pizza osta"
+                        />
+                        <h1>Pizza Osta</h1>
+                        <p className="linear-gradient-rl">+371 999 999 99</p>
                     </div>
-                    <Link to={'/login'} className="login">
-                        Log In / Sign Up
-                    </Link>
+                    <div className="r-side">
+                        <div className="pizza-constructor">
+                            <a href="/pizza-constructor">Constructor</a>
+                        </div>
+                        <Link to={'/login'} className="login">
+                            Log In / Sign Up
+                        </Link>
+                    </div>
                 </div>
-            </div>
-            <div className={`content-2 ${isSticky ? 'sticky' : ''}`}>
-                <ul>
-                    <li>Offers</li>
-                    <li>Order</li>
-                    <li>Find Us</li>
-                </ul>
-            </div>
-        </nav>
+                <div className={`content-2 ${isSticky ? 'sticky' : ''}`}>
+                    <ul>
+                        <li>
+                            <Link to={'offers'}>Offers</Link>
+                        </li>
+                        <li>
+                            <Link to={'/'}>Order</Link>
+                        </li>
+                        <li>
+                            <Link to={'find-us'}>Find Us</Link>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
     )
 }
 
