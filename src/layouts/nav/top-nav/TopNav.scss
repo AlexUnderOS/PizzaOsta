@@ -58,6 +58,10 @@
         font-weight: 700;
     }
 
+    .container-2 {
+        height: 5rem;
+        background: var(--cl-dark-3);
+    }
     .content-2 {
         top: 0;
         background: rgba(0, 0, 0, 0.2);
@@ -69,9 +73,15 @@
             margin-left: 2.5rem;
             display: flex;
             li {
-                padding: 20px;
+                height: 5rem;
+                width: 10rem;
                 transition: all 0.2s ease-in-out;
                 a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
                     color: var(--cl-light-1);
                     transition: color 0.2s ease-in-out;
                 }
@@ -84,16 +94,12 @@
             }
         }
     }
-
     .content-2.sticky {
-        opacity: 1;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 1000;
         background: var(--cl-dark-3);
-        transform: translateY(0);
-        transition: opacity 0.3s ease, transform 0.3s ease;
     }
 }
 

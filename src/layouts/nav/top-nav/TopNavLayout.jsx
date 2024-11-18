@@ -3,7 +3,7 @@ import useParallax from '../../../hooks/useParalax'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-function TopNav() {
+function TopNavLayout() {
     const [isSticky, setIsSticky] = useState(false)
     useEffect(() => {
         const handleScroll = () => {
@@ -44,22 +44,24 @@ function TopNav() {
                         </Link>
                     </div>
                 </div>
-                <div className={`content-2 ${isSticky ? 'sticky' : ''}`}>
-                    <ul>
-                        <li>
-                            <Link to={'offers'}>Offers</Link>
-                        </li>
-                        <li>
-                            <Link to={'/'}>Order</Link>
-                        </li>
-                        <li>
-                            <Link to={'find-us'}>Find Us</Link>
-                        </li>
-                    </ul>
+                <div className="container-2">
+                    <div className={`content-2 ${isSticky ? 'sticky' : ''}`}>
+                        <ul>
+                            <li>
+                                <Link to={'offers'}>Offers</Link>
+                            </li>
+                            <li>
+                                <Link to={'/'}>Order</Link>
+                            </li>
+                            <li>
+                                <Link to={'find-us'}>Find Us</Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
     )
 }
 
-export default TopNav
+export default TopNavLayout

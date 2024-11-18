@@ -2,18 +2,18 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './global.css'
 import WelcomePage from './pages/Welcome/WelcomePage'
-import TopNav from './layouts/nav/top-nav/TopNav'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import LoginPage from './pages/Login/LoginPage'
 import NotfoundPage from './pages/Errors/NotfoundPage'
 import FindUsPage from './pages/FindUs/FindUsPage'
 import OffersPage from './pages/Offers/OffersPage'
+import TopNavLayout from './layouts/nav/top-nav/TopNavLayout'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <BrowserRouter>
             <header>
-                <TopNav />
+                <TopNavLayout />
             </header>
 
             <Routes>

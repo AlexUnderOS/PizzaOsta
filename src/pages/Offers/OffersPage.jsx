@@ -16,8 +16,10 @@ function OffersPage() {
                             Buy any pizza (L) with fries and get your free
                             drink! 14.49€
                         </h3>
-                        <div className="deal-date">13 november 2024</div>
-                        <p className="deal-text">Enjoy your meal</p>
+                        <div className="deal-date">13 november</div>
+                        <p className="deal-text">
+                            The price may vary depending on the pizza.
+                        </p>
                         <button className="deal-button">Details</button>
                     </div>
                     <div className="content">
@@ -27,11 +29,13 @@ function OffersPage() {
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">
-                            Buy any pizza (L) with fries and get your free
-                            drink! 14.49€
+                            X2 Buy a peperoni pizza (M), the second one will be
+                            cheaper 7.99€
                         </h3>
-                        <div className="deal-date">13 november 2024</div>
-                        <p className="deal-text">Enjoy your meal</p>
+                        <div className="deal-date">13 november</div>
+                        <p className="deal-text">
+                            The price may vary depending on the pizza.
+                        </p>
                         <button className="deal-button">Details</button>
                     </div>
                     <div className="content">
@@ -41,11 +45,12 @@ function OffersPage() {
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">
-                            Buy any pizza (L) with fries and get your free
-                            drink! 14.49€
+                            2 (M) pizzas and juice for free! 9.99€
                         </h3>
-                        <div className="deal-date">13 november 2024</div>
-                        <p className="deal-text">Enjoy your meal</p>
+                        <div className="deal-date">13 november</div>
+                        <p className="deal-text">
+                            The price may vary depending on the pizza.
+                        </p>
                         <button className="deal-button">Details</button>
                     </div>
                     <div className="content">
@@ -55,14 +60,15 @@ function OffersPage() {
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">
-                            Buy any pizza (L) with fries and get your free
-                            drink! 14.49€
+                            X3 Buy 3 pizzas (S) for less than the price of each
+                            one! 14.99€
                         </h3>
-                        <div className="deal-date">13 november 2024</div>
-                        <p className="deal-text">Enjoy your meal</p>
+                        <div className="deal-date">13 november</div>
+                        <p className="deal-text">
+                            The price may vary depending on the pizza.
+                        </p>
                         <button className="deal-button">Details</button>
                     </div>
-                    
                 </div>
             </div>
         </div>
