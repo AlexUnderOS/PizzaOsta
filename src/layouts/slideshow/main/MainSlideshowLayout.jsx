@@ -9,7 +9,7 @@ function MainSlideshowLayout() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
     const images = Array.from(
         { length: imgCount },
-        (_, i) => `/src/images/slideshow/${imgName}_${i + 1}.${imgFormat}`
+        (_, i) => `./src/images/slideshow/${imgName}_${i + 1}.${imgFormat}`
     )
     console.log(images)
 

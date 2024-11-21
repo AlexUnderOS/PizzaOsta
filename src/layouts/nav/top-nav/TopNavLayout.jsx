@@ -2,6 +2,7 @@ import './TopNav.scss'
 import useParallax from '../../../hooks/useParalax'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import pizzalogo from '../../../images/pizzalogo.png';
 
 function TopNavLayout() {
     const [isSticky, setIsSticky] = useState(false)
@@ -29,7 +30,7 @@ function TopNavLayout() {
                         <img
                             draggable="false"
                             className="logo"
-                            src="/src/images/pizzalogo.png"
+                            src={pizzalogo}
                             alt="pizza osta"
                         />
                         <h1>Pizza Osta</h1>
@@ -37,7 +38,7 @@ function TopNavLayout() {
                     </div>
                     <div className="r-side">
                         <div className="pizza-constructor">
-                            <a href="/pizza-constructor">Constructor</a>
+                            <a href="#">Constructor</a>
                         </div>
                         <Link to={'/login'} className="login">
                             Log In / Sign Up

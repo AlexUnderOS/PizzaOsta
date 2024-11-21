@@ -9,7 +9,7 @@ function OffersPage() {
                     <div className="content">
                         <img
                             className="deal-image"
-                            src="/src/images/comercial/deal_1.png"
+                            src="./src/images/comercial/deal_1.png"
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">
@@ -25,7 +25,7 @@ function OffersPage() {
                     <div className="content">
                         <img
                             className="deal-image"
-                            src="/src/images/comercial/deal_2.png"
+                            src="./src/images/comercial/deal_2.png"
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">
@@ -41,7 +41,7 @@ function OffersPage() {
                     <div className="content">
                         <img
                             className="deal-image"
-                            src="/src/images/comercial/deal_3.png"
+                            src="./src/images/comercial/deal_3.png"
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">
@@ -56,7 +56,7 @@ function OffersPage() {
                     <div className="content">
                         <img
                             className="deal-image"
-                            src="/src/images/comercial/deal_4.png"
+                            src="./src/images/comercial/deal_4.png"
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">

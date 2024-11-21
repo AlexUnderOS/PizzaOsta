@@ -16,12 +16,12 @@ function LoginPage() {
                         <div className="social-icons">
                             <img
                                 className="facebook"
-                                src="/src/images/social/facebook.svg"
+                                src="./src/images/social/facebook.svg"
                                 alt="facebook icon"
                             />
                             <img
                                 className="google"
-                                src="/src/images/social/google.svg"
+                                src="./src/images/social/google.svg"
                                 alt="google icon"
                             />
                         </div>

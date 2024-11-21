@@ -24,7 +24,7 @@ function WelcomePage() {
             size,
             quantity,
             price: priceMap[size],
-            image: `/src/images/food_imgs/pizzas/${pizza.imageName}`,
+            image: `./src/images/food_imgs/pizzas/${pizza.imageName}`,
         }
 
         setCartItems((prevCartItems) => {
@@ -76,7 +76,7 @@ function WelcomePage() {
                 ref={scrollButtonRef}
                 onClick={() => scrollToElement(orderListRef)}
             >
-                <img src="/src/images/arrow.svg" alt="Scroll" />
+                <img src="./src/images/arrow.svg" alt="Scroll" />
             </button>
             <div className="orders-container" ref={orderListRef}>
                 <div className="pizza-content">
@@ -117,7 +117,7 @@ function PizzaCard({ pizza, onAddToCart }) {
         <div className={`content ${pizza.available ? '' : 'disabled'}`}>
             <img
                 className="food-img"
-                src={`/src/images/food_imgs/pizzas/${pizza.imageName}`}
+                src={`./src/images/food_imgs/pizzas/${pizza.imageName}`}
                 alt={`Pizza ${pizza.name}`}
             />
             <h3>{pizza.name}</h3>

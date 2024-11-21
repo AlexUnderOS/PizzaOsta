@@ -7,7 +7,7 @@ function FindUsPage() {
                 <div className="findUs-content box-shadow-1">
                     <img
                         className="pizzeria-place-img"
-                        src="/src/images/locals/pizza_osta_place.png"
+                        src="./src/images/locals/pizza_osta_place.png"
                         alt="pizza osta location"
                     />
                     <div className="info">
@@ -17,7 +17,7 @@ function FindUsPage() {
                                     Pizza Osta - Liepāja
                                     <img
                                         className="location-icon"
-                                        src="/src/images/emoji/local.svg"
+                                        src="./src/images/emoji/local.svg"
                                         alt="location icon"
                                         draggable="false"
                                         color="#c72020"
@@ -39,17 +39,17 @@ function FindUsPage() {
                         <div className="social-icons">
                             <img
                                 className="facebook"
-                                src="/src/images/social/facebook.svg"
+                                src="./src/images/social/facebook.svg"
                                 alt="facebook icon"
                             />
                             <img
                                 className="instagram"
-                                src="/src/images/social/instagram.svg"
+                                src="./src/images/social/instagram.svg"
                                 alt="instagram icon"
                             />
                             <img
                                 className="youtube"
-                                src="/src/images/social/youtube.svg"
+                                src="./src/images/social/youtube.svg"
                                 alt="youtube icon"
                             />
                         </div>

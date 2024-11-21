@@ -11,7 +11,7 @@ import TopNavLayout from './layouts/nav/top-nav/TopNavLayout'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename='/PizzaOsta/'>
             <header>
                 <TopNavLayout />
             </header>
@@ -19,9 +19,9 @@ createRoot(document.getElementById('root')).render(
             <Routes>
                 <Route path="/" element={<WelcomePage />} />
                 <Route path="/order" element={<WelcomePage />} />
-                <Route path="login" element={<LoginPage />} />
-                <Route path="offers" element={<OffersPage />} />
-                <Route path="find-us" element={<FindUsPage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/offers" element={<OffersPage />} />
+                <Route path="/find-us" element={<FindUsPage />} />
                 <Route path="*" element={<NotfoundPage />} />
             </Routes>
         </BrowserRouter>

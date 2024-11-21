@@ -14,7 +14,9 @@ function CartLayout({ cartItems, onResetCart, setCartItems }) {
 
     const removeItem = (id, price) => {
         setCartItems((prevItems) =>
-            prevItems.filter((item) => !(item.id === id && item.price === price))
+            prevItems.filter(
+                (item) => !(item.id === id && item.price === price)
+            )
         )
     }
 
@@ -49,7 +51,7 @@ function CartLayout({ cartItems, onResetCart, setCartItems }) {
                                 >
                                     <img
                                         draggable="false"
-                                        src="/src/images/Group 12.svg"
+                                        src="./src/images/minus.svg"
                                         alt="Remove item"
                                     />
                                 </button>
