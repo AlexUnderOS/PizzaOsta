@@ -12,7 +12,7 @@ Language selection: *[Русский](README_RU.md) ∙ [Latviešu](README_LV.md
 - [ ] **ConstructorPage** — pizza constructor functionality.
 - [ ] **More products in the list** — more sections (not just Pizza)
 - [ ] **LocalStorage** — storing data where it is needed.
-- [ ] **Correct program build (imgs)** — customizing the collection of images and other resources.
+- [x] **Correct program build (imgs)** — customizing the collection of images and other resources.
 - [ ] **UI optimization** — improving the structure and performance of styles.
 - [ ] **Removing individual items from the shopping cart**.
 - [ ] **Separate page with the list of offers**.
