@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import './Cart.scss'
 import { useState, useEffect } from 'react'
+import minusIcon from '/images/minus.svg'
 
 function CartLayout({ cartItems, onResetCart, setCartItems }) {
     const [totalAmount, setTotalAmount] = useState('00.00€')
@@ -51,7 +52,7 @@ function CartLayout({ cartItems, onResetCart, setCartItems }) {
                                 >
                                     <img
                                         draggable="false"
-                                        src="./src/images/minus.svg"
+                                        src={minusIcon}
                                         alt="Remove item"
                                     />
                                 </button>
@@ -78,14 +79,14 @@ CartLayout.propTypes = {
         PropTypes.shape({
             id: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
-            size: PropTypes.string.isRequired, // Здесь важно указать, что size обязательно
+            size: PropTypes.string.isRequired,
             quantity: PropTypes.number.isRequired,
             price: PropTypes.number.isRequired,
             image: PropTypes.string.isRequired,
         })
     ).isRequired,
     onResetCart: PropTypes.func.isRequired,
-    setCartItems: PropTypes.func.isRequired, // Передается функция для изменения состояния корзины
+    setCartItems: PropTypes.func.isRequired,
 }
 
 export default CartLayout

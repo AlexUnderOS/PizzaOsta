@@ -3,13 +3,21 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/PizzaOsta/',
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler'
-      }
-    }
-  }
+    module: {
+        rules: [
+            {
+                test: /\.(png|jpg|jpeg|gif|svg)$/i,
+                type: 'asset/resource',
+            },
+        ],
+    },
+    plugins: [react()],
+    base: '/PizzaOsta/',
+    css: {
+        preprocessorOptions: {
+            scss: {
+                api: 'modern-compiler',
+            },
+        },
+    },
 })

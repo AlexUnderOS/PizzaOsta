@@ -1,25 +1,21 @@
 import './MainSlideshow.scss'
 import { useState, useEffect } from 'react'
+import img1 from '/images/slideshow/slideshow_img_1.png'
+import img2 from '/images/slideshow/slideshow_img_2.png'
+import img3 from '/images/slideshow/slideshow_img_3.png'
+
+const images = [img1, img2, img3]
 
 function MainSlideshowLayout() {
-    const imgName = 'slideshow_img'
-    const imgFormat = 'png'
-    const imgCount = 3
-
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
-    const images = Array.from(
-        { length: imgCount },
-        (_, i) => `./src/images/slideshow/${imgName}_${i + 1}.${imgFormat}`
-    )
-    console.log(images)
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imgCount)
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
         }, 10000)
 
         return () => clearInterval(interval)
-    }, [imgCount])
+    }, [])
 
     return (
         <div className="main-slideshow">

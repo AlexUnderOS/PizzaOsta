@@ -1,4 +1,8 @@
 import './OffersPage.scss'
+import dealImage1 from '/images/comercial/deal_1.png'
+import dealImage2 from '/images/comercial/deal_2.png'
+import dealImage3 from '/images/comercial/deal_3.png'
+import dealImage4 from '/images/comercial/deal_4.png'
 
 function OffersPage() {
     return (
@@ -9,7 +13,7 @@ function OffersPage() {
                     <div className="content">
                         <img
                             className="deal-image"
-                            src="./src/images/comercial/deal_1.png"
+                            src={dealImage1}
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">
@@ -25,7 +29,7 @@ function OffersPage() {
                     <div className="content">
                         <img
                             className="deal-image"
-                            src="./src/images/comercial/deal_2.png"
+                            src={dealImage2}
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">
@@ -41,7 +45,7 @@ function OffersPage() {
                     <div className="content">
                         <img
                             className="deal-image"
-                            src="./src/images/comercial/deal_3.png"
+                            src={dealImage3}
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">
@@ -56,7 +60,7 @@ function OffersPage() {
                     <div className="content">
                         <img
                             className="deal-image"
-                            src="./src/images/comercial/deal_4.png"
+                            src={dealImage4}
                             alt="pizza by osta - deals"
                         />
                         <h3 className="deal-title">

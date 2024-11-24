@@ -1,4 +1,6 @@
 import './Login.scss'
+import googleIcon from '/images/social/google.svg'
+import facebookIcon from '/images/social/facebook.svg'
 
 function LoginPage() {
     return (
@@ -16,12 +18,12 @@ function LoginPage() {
                         <div className="social-icons">
                             <img
                                 className="facebook"
-                                src="./src/images/social/facebook.svg"
+                                src={facebookIcon}
                                 alt="facebook icon"
                             />
                             <img
                                 className="google"
-                                src="./src/images/social/google.svg"
+                                src={googleIcon}
                                 alt="google icon"
                             />
                         </div>

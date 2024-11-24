@@ -6,6 +6,8 @@ import { scrollToElement } from '../../scripts/scroll.js'
 import CartLayout from '../../layouts/cart/CartLayout.jsx'
 import products from '../../data/products.json'
 
+import arrowIcon from '/images/arrow.svg'
+
 function WelcomePage() {
     const scrollButtonRef = useRef(null)
     const orderListRef = useRef(null)
@@ -24,7 +26,8 @@ function WelcomePage() {
             size,
             quantity,
             price: priceMap[size],
-            image: `./src/images/food_imgs/pizzas/${pizza.imageName}`,
+            image: productImports.pizzas[pizza.imageKey],
+
         }
 
         setCartItems((prevCartItems) => {
@@ -76,7 +79,7 @@ function WelcomePage() {
                 ref={scrollButtonRef}
                 onClick={() => scrollToElement(orderListRef)}
             >
-                <img src="./src/images/arrow.svg" alt="Scroll" />
+                <img src={arrowIcon} alt="Scroll" />
             </button>
             <div className="orders-container" ref={orderListRef}>
                 <div className="pizza-content">
@@ -97,27 +100,31 @@ function WelcomePage() {
     )
 }
 
+import productImports from '../../imports/products.js';
+
 function PizzaCard({ pizza, onAddToCart }) {
-    const [selectedSize, setSelectedSize] = useState('S')
-    const [quantity, setQuantity] = useState(1)
+    const [selectedSize, setSelectedSize] = useState('S');
+    const [quantity, setQuantity] = useState(1);
 
     const getPrice = () => {
         switch (selectedSize) {
             case 'M':
-                return pizza.M_size
+                return pizza.M_size;
             case 'L':
-                return pizza.L_size
+                return pizza.L_size;
             default:
-                return pizza.S_size
+                return pizza.S_size;
         }
-    }
-    const price = getPrice()
+    };
+
+    const price = getPrice();
+    const pizzaImage = productImports.pizzas[pizza.imageKey];
 
     return (
         <div className={`content ${pizza.available ? '' : 'disabled'}`}>
             <img
                 className="food-img"
-                src={`./src/images/food_imgs/pizzas/${pizza.imageName}`}
+                src={pizzaImage}
                 alt={`Pizza ${pizza.name}`}
             />
             <h3>{pizza.name}</h3>
@@ -158,12 +165,7 @@ function PizzaCard({ pizza, onAddToCart }) {
                         <button
                             className="add-to-cart-btn"
                             onClick={() =>
-                                onAddToCart(
-                                    pizza,
-                                    selectedSize,
-                                    quantity,
-                                    price
-                                )
+                                onAddToCart(pizza, selectedSize, quantity, price)
                             }
                         >
                             Add to cart
@@ -174,7 +176,7 @@ function PizzaCard({ pizza, onAddToCart }) {
                 <p className="unavailable-text">Not available</p>
             )}
         </div>
-    )
+    );
 }
 
 PizzaCard.propTypes = {
@@ -187,6 +189,7 @@ PizzaCard.propTypes = {
         S_size: PropTypes.number.isRequired,
         M_size: PropTypes.number.isRequired,
         L_size: PropTypes.number.isRequired,
+        imageKey: PropTypes.string.isRequired,
     }).isRequired,
     onAddToCart: PropTypes.func.isRequired,
 }

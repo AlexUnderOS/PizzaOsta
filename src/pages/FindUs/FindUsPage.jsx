@@ -1,4 +1,9 @@
 import './FindUsPage.scss'
+import pizzaOstaPlaceImg from '/images/locals/pizza_osta_place.png'
+import localIcon from '/images/emoji/local.svg'
+import instagramIcon from '/images/social/instagram.svg'
+import youtubeIcon from '/images/social/youtube.svg'
+import facebookIcon from '/images/social/facebook.svg'
 
 function FindUsPage() {
     return (
@@ -7,7 +12,7 @@ function FindUsPage() {
                 <div className="findUs-content box-shadow-1">
                     <img
                         className="pizzeria-place-img"
-                        src="./src/images/locals/pizza_osta_place.png"
+                        src={pizzaOstaPlaceImg}
                         alt="pizza osta location"
                     />
                     <div className="info">
@@ -17,7 +22,7 @@ function FindUsPage() {
                                     Pizza Osta - Liepāja
                                     <img
                                         className="location-icon"
-                                        src="./src/images/emoji/local.svg"
+                                        src={localIcon}
                                         alt="location icon"
                                         draggable="false"
                                         color="#c72020"
@@ -39,17 +44,17 @@ function FindUsPage() {
                         <div className="social-icons">
                             <img
                                 className="facebook"
-                                src="./src/images/social/facebook.svg"
+                                src={facebookIcon}
                                 alt="facebook icon"
                             />
                             <img
                                 className="instagram"
-                                src="./src/images/social/instagram.svg"
+                                src={instagramIcon}
                                 alt="instagram icon"
                             />
                             <img
                                 className="youtube"
-                                src="./src/images/social/youtube.svg"
+                                src={youtubeIcon}
                                 alt="youtube icon"
                             />
                         </div>

@@ -2,7 +2,7 @@ import './TopNav.scss'
 import useParallax from '../../../hooks/useParalax'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import pizzalogo from '../../../images/pizzalogo.png';
+import pizzalogo from '/images/pizzalogo.png'
 
 function TopNavLayout() {
     const [isSticky, setIsSticky] = useState(false)
